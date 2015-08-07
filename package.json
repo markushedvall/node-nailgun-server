@@ -6,6 +6,11 @@
   "repository": "https://github.com/markushedvall/node-nailgun-server",
   "main": "index.js",
   "license": "Apache-2.0",
+  "keywords": [
+    "nailgun",
+    "java",
+    "jvm"
+  ],
   "dependencies": {
     "commander": "^2.8.1"
   },
