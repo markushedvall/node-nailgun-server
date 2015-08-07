@@ -6,7 +6,7 @@ A Node.js module and CLI for running [Nailgun](http://martiansoftware.com/nailgu
 
 This let's you either run Nailgun as a standlone server trough a command line interface or directly through your Node.js applications.
 
-Note that this only provides support for running Nailgun servers. If you are need of a Nailgun client for Node.js, [jvmpin](https://www.npmjs.com/package/jvmpin) is recommended.
+Note that this only provides support for running Nailgun servers. If you are need of a Nailgun client for Node.js, [node-nailgun-client](https://www.npmjs.com/package/node-nailgun-client) is recommended.
 
 # Install
 
@@ -24,10 +24,10 @@ var server = nailgun.createServer();
 server.out.pipe(process.stdout);
 ```
 
-In the following example [jvmpin](https://www.npmjs.com/package/jvmpin) is used to communicate with the server:
+In the following example [node-nailgun-client](https://www.npmjs.com/package/node-nailgun-client) is used to communicate with the server:
 ```javascript
 var nailgun = require('node-nailgun-server');
-var jvmpin = require('jvmpin');
+var client = require('node-nailgun-client');
 
 var options {
   address: 'localhost',
@@ -35,7 +35,7 @@ var options {
 }
 
 nailgun.createServer(options, function(port) {
-  var nail = jvmpin.createConnection(port, 'localhost').spawn('ng-stats');
+  var nail = client.exec('ng-stats', { port: port })
   nail.stdout.pipe(process.stdout);
 });
 ```
