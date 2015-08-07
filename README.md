@@ -2,7 +2,7 @@
 
 A Node.js module and CLI for running [Nailgun](http://martiansoftware.com/nailgun/) servers.
 
-[![Build Status](https://travis-ci.org/markushedvall/node-nailgun-server.svg)](https://travis-ci.org/markushedvall/node-nailgun-server) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![npm Version](https://img.shields.io/npm/v/node-nailgun-server.svg)](https://www.npmjs.com/package/node-nailgun-server) [![Build Status](https://travis-ci.org/markushedvall/node-nailgun-server.svg)](https://travis-ci.org/markushedvall/node-nailgun-server) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 This let's you either run Nailgun as a standlone server trough a command line interface or directly through your Node.js applications.
 
