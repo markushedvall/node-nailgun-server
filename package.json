@@ -10,10 +10,12 @@
     "commander": "^2.8.1"
   },
   "devDependencies": {
-    "eslint": "^0.24.0",
-    "jscs": "^1.13.1"
+    "standard": "^5.0.2"
   },
   "bin": {
     "node-nailgun-server": "index.js"
+  },
+  "scripts": {
+    "test": "standard"
   }
 }

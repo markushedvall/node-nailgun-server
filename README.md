@@ -2,6 +2,8 @@
 
 A Node.js module and CLI for running [Nailgun](http://martiansoftware.com/nailgun/) servers.
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 This let's you either run Nailgun as a standlone server trough a command line interface or directly through your Node.js applications.
 
 Note that this only provides support for running Nailgun servers. If you are need of a Nailgun client for Node.js, [jvmpin](https://www.npmjs.com/package/jvmpin) is recommended.

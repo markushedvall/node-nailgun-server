@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 
 if (require.main === module) {
-  require('./lib/node-nailgun-server-cmd.js');
+  require('./lib/node-nailgun-server-cmd.js')
 } else {
-  module.exports = require('./lib/node-nailgun-server');
+  module.exports = require('./lib/node-nailgun-server')
 }
