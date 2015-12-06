@@ -60,5 +60,4 @@ describe('node-nailgun-server', function () {
       }
     })
   })
-
 })
