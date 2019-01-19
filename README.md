@@ -1,10 +1,10 @@
 # node-nailgun-server
 
-A Node.js module and CLI for running [Nailgun](http://martiansoftware.com/nailgun/) servers.
+A Node.js module for running [Nailgun](http://martiansoftware.com/nailgun/) servers.
 
 [![npm Version](https://img.shields.io/npm/v/node-nailgun-server.svg)](https://www.npmjs.com/package/node-nailgun-server) [![Build Status](https://travis-ci.org/markushedvall/node-nailgun-server.svg)](https://travis-ci.org/markushedvall/node-nailgun-server) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-This let's you either run Nailgun as a standlone server trough a command line interface or directly through your Node.js applications.
+This package enable you to run Nailgun servers through your Node.js applications.
 
 Note that this only provides support for running Nailgun servers. If you are need of a Nailgun client for Node.js, [node-nailgun-client](https://www.npmjs.com/package/node-nailgun-client) is recommended.
 
@@ -46,19 +46,6 @@ server.shutdown();
 ```
 
 Servers are also shutdown automatically when the Node.js process exits.
-
-# CLI
-
-```
-Usage: node-nailgun-server [options]
-
-Options:
-
-  -h, --help               output usage information
-  -V, --version            output the version number
-  -a, --address [address]  the address at which to listen
-  -p, --port [port]        the port on which to listen
-```
 
 # License
 Apache License 2.0
