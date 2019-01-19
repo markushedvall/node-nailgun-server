@@ -1,39 +1,32 @@
 /* global describe it */
+/* eslint-disable no-unused-expressions */
 var chai = require('chai')
-var util = require('util')
 var nailgun = require('../lib/node-nailgun-server')
 
 var expect = chai.expect
 
 describe('node-nailgun-server', function () {
-  it('should return shutdown function when created', function () {
-    var server = nailgun.createServer()
-    expect(util.isFunction(server.shutdown)).to.be.true
-  })
-
-  it('should return out object when created', function () {
-    var server = nailgun.createServer()
-    expect(typeof server === 'object').to.be.true
-  })
-
   it('should give port in callback', function (done) {
-    nailgun.createServer({ port: 4242 }, function (port) {
+    var server = nailgun.createServer({ port: 4242 }, function (port) {
       expect(port).to.be.equal(4242)
       done()
+      server.shutdown()
     })
   })
 
   it('should give default port 2113', function (done) {
-    nailgun.createServer(function (port) {
+    var server = nailgun.createServer(function (port) {
       expect(port).to.be.equal(2113)
       done()
+      server.shutdown()
     })
   })
 
   it('should give random port when configuring port as 0', function (done) {
-    nailgun.createServer({ port: 0 }, function (port) {
+    var server = nailgun.createServer({ port: 0 }, function (port) {
       expect(port).to.be.above(0)
       done()
+      server.shutdown()
     })
   })
 
@@ -45,6 +38,7 @@ describe('node-nailgun-server', function () {
         expect(started).to.not.be.undefined
         done()
       }
+      server.shutdown()
     })
   })
 

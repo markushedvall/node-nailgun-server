@@ -12,9 +12,9 @@
     "jvm"
   ],
   "devDependencies": {
-    "chai": "^3.2.0",
-    "mocha": "^2.2.5",
-    "standard": "^5.0.2"
+    "chai": "^4.x",
+    "mocha": "^5.x",
+    "standard": "^12.x"
   },
   "scripts": {
     "test": "standard && mocha"
