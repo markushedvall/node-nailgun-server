@@ -33,7 +33,7 @@ describe('node-nailgun-server', function () {
   it('should print a start message when started', function (done) {
     var server = nailgun.createServer()
     server.out.on('data', function (data) {
-      var started = data.toString().match(/^NGServer started on .+, port \d+./)
+      var started = data.toString().match(/^NGServer .+ started on .+, port \d+./)
       if (started) {
         expect(started).to.not.be.undefined
         done()
@@ -45,7 +45,7 @@ describe('node-nailgun-server', function () {
   it('should print a shut down message at shutdown', function (done) {
     var server = nailgun.createServer()
     server.out.on('data', function (data) {
-      var started = data.toString().match(/^NGServer started on .+, port \d+./)
+      var started = data.toString().match(/^NGServer .+ started on .+, port \d+./)
       if (started) server.shutdown()
       var shutdown = data.toString().match(/^NGServer shut down./)
       if (shutdown) {
