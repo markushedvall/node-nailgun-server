@@ -4,7 +4,7 @@
   "description": "A Node.js module for running Nailgun servers",
   "author": "Markus Hedvall <mackanhedvall@gmail.com>",
   "repository": "https://github.com/markushedvall/node-nailgun-server",
-  "main": "index.js",
+  "main": "lib/node-nailgun-server.js",
   "license": "Apache-2.0",
   "keywords": [
     "nailgun",
