@@ -17,6 +17,10 @@
     "standard": "^12.x",
     "download": "^7.x"
   },
+  "files": [
+    "lib/",
+    "vendor/nailgun.jar"
+  ],
   "scripts": {
     "prepublish": "node scripts/get-nailgun.js",
     "test": "npm run lint && npm run unit",
