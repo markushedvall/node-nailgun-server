@@ -4,7 +4,7 @@
 const path = require('path')
 const download = require('download')
 
-const URL = 'https://github.com/facebook/nailgun/releases/download/nailgun-all-v1.0.0/nailgun-server-1.0.0-SNAPSHOT.jar'
+const URL = 'https://github.com/facebook/nailgun/releases/download/nailgun-all-v1.0.0/nailgun-server-1.0.0-SNAPSHOT-uber.jar'
 
 const JAR_DIR_PATH = path.join(__dirname, '../vendor')
 
