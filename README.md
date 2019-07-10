@@ -29,7 +29,7 @@ In the following example [node-nailgun-client](https://www.npmjs.com/package/nod
 var nailgun = require('node-nailgun-server');
 var client = require('node-nailgun-client');
 
-var options {
+var options = {
   address: 'localhost',
   port: 0, // 0 lets the server choose a random port
 }
