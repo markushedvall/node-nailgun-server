@@ -18,24 +18,24 @@ npm install node-nailgun-server
 
 By the default the server will listen to all interfaces on port 2113.
 ```javascript
-var nailgun = require('node-nailgun-server');
+const nailgun = require('node-nailgun-server');
 
-var server = nailgun.createServer();
+const server = nailgun.createServer();
 server.out.pipe(process.stdout);
 ```
 
 In the following example [node-nailgun-client](https://www.npmjs.com/package/node-nailgun-client) is used to communicate with the server:
 ```javascript
-var nailgun = require('node-nailgun-server');
-var client = require('node-nailgun-client');
+const nailgun = require('node-nailgun-server');
+const client = require('node-nailgun-client');
 
-var options = {
+const options = {
   address: 'localhost',
   port: 0, // 0 lets the server choose a random port
 }
 
 nailgun.createServer(options, function(port) {
-  var nail = client.exec('ng-stats', { port: port })
+  const nail = client.exec('ng-stats', { port: port })
   nail.stdout.pipe(process.stdout);
 });
 ```
