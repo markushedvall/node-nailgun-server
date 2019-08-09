@@ -6,6 +6,9 @@
   "repository": "https://github.com/markushedvall/node-nailgun-server",
   "main": "lib/node-nailgun-server.js",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 8.x"
+  },
   "keywords": [
     "nailgun",
     "java",
